@@ -1,0 +1,17 @@
+{
+    "name": "royfee/feepdf",
+    "autoload": {
+        "psr-4": {
+            "royfee\\feepdf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "royfee",
+            "email": "ainet@126.com"
+        }
+    ],
+    "require": {
+        "setasign/fpdi": "^2.3"
+    }
+}
