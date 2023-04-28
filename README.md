@@ -1,5 +1,5 @@
 # feepdf
-Base on fpdf,fpdi
+基于 setasign/fpdi库
 
 #增加了中文支持
 ```php
