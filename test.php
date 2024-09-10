@@ -54,3 +54,14 @@ $pdf->Cell(60,10,iconv("utf-8","gbk","女"),1);
 $pdf->Ln();
 $pdf->Output();//直接输出，即在浏览器显示
 
+
+$pdf = new \royfee\feepdf\Fpdi;
+$file = 'EYT4090945199SZ.pdf';
+$pdf->setSourceFile($file);
+$template = $pdf->importPage(1);
+$specs = $pdf->getTemplateSize($template);
+$pdf->AddPage('P',[$specs['width'],$specs['height']]);
+$pdf->useTemplate($template); 
+
+$pdf->image("roymail-return-address.png", 76, 75, 19);
+$pdf->Output($file,'F');
