@@ -54,7 +54,7 @@ $pdf->Cell(60,10,iconv("utf-8","gbk","女"),1);
 $pdf->Ln();
 $pdf->Output();//直接输出，即在浏览器显示
 
-
+//修改pdf
 $pdf = new \royfee\feepdf\Fpdi;
 $file = 'EYT4090945199SZ.pdf';
 $pdf->setSourceFile($file);
